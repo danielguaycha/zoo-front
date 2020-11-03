@@ -1,0 +1,191 @@
+$nav-height: 60px;
+* {
+  box-sizing: border-box;
+}
+.MuiContainer-root {
+  padding-top: 1rem;
+}
+.home-nav {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2);
+  top: 0;
+  background: white;
+  width: 100%;
+  position: sticky;
+  align-items: center;
+  height: $nav-height;
+  border: 1px solid rgba(black, .05);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .5rem;
+  z-index: 1000;
+  @include tablet {
+    padding: 0 1rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $primary;
+    font-weight: 500;
+    font-size: 1.2em;
+    img {
+      height: $nav-height - 7px;
+      margin-right: .5rem;
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    input[type=search] {
+      padding:  0 1rem;
+      height: $nav-height - 15px;
+      border: 1px solid rgba(black, .1);
+      border-radius: 25px;
+      &:hover, &:focus, &:active {
+        outline: none;
+      }
+      &::placeholder {
+        color: rgba(black, .3);
+      }
+      &:hover, &:focus {
+        border-color: $primary;
+      }
+    }
+    button {
+      background: transparent;
+      color: $primary;
+      border: none;
+      height: $nav-height - 15px;
+      padding: 0 .8rem;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover, &:focus, &:active {
+        outline: none;
+      }
+    }
+  }
+
+
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  a.btnAdmin {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $primary;
+    svg {
+      margin-right: 5px;
+    }
+  }
+}
+
+.MuiAvatar-colorDefault {
+  background: $secondary !important;
+  z-index: 1;
+}
+
+
+.admin-menu {
+  display: flex;
+  li {
+    list-style: none;
+    margin: 0 5px;
+    a {
+      text-decoration: none;
+      color: darken($primary, 20);
+      padding: .2rem .5rem;
+      border-radius: 10px;
+      &:hover, &.active {
+        background: rgba($primary, .2);
+        color: darken($primary, 20);
+      }
+    }
+    button {
+      background: transparent;
+      border: none;
+      color: rgba(black, .5);
+      cursor: pointer;
+      padding: .2rem;
+      border-radius: 7px;
+      &:focus, &:active, &:hover, &.active {
+        outline: none;
+        background: $primary;
+        color: white;
+      }
+    }
+
+    &.separator {
+      color: rgba(black, .2);
+    }
+  }
+}
+
+.header-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .title {
+    display: flex;
+    align-items: center;
+  }
+}
+
+#formSearch
+{
+  display: none;
+  background: rgba(white, .95);
+  position: fixed;
+  padding: 0 .4rem;
+  z-index: 1000;
+  input {
+    flex: 1;
+  }
+  width: 100%;
+  height: $nav-height;
+  top: 0;
+  left: 0;
+  @include tablet {
+    position: relative;
+    background: none;
+    display: flex;
+  }
+  &.active {
+    display: flex;
+  }
+}
+
+#closeSearch {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+
+.open-search {
+  display: block;
+  background: none;
+  border: none;
+  margin-right: 1rem;
+  height: $nav-height;
+  color: $primary;
+  padding: 0 1rem;
+  cursor: pointer;
+  &:active, &:focus {
+    outline: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+.container {
+  padding-bottom: 2rem;
+}

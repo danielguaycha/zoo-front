@@ -1,0 +1,65 @@
+// boxes for statadistics
+.box-info {
+  border-radius: 7px;
+  padding: 1rem;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.26);
+  background: $primary;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  h3, p {
+    margin: 0;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  p {
+    font-size: .8rem;
+    color: rgba(white, .6);
+    font-weight: 700;
+  }
+  span {
+    color: rgba(white, .25);
+    font-size: 7rem;
+    position: absolute;
+    right: -13%;
+    top: -15%;
+    transform: rotate(22deg);
+  }
+
+  &.green {
+    background: $green !important;
+  }
+
+  &.red {
+    background: $red !important;
+  }
+
+  &.orange {
+    background: $orange !important;
+  }
+
+  &.primary {
+    background: $primary !important;
+  }
+
+  &.secondary {
+    background: darken($orange, 5) !important;
+  }
+
+  &.purple {
+    background: $purple !important;
+  }
+
+  &.deal {
+    background: darken($teal, 10) !important;
+  }
+  &.cyan {
+    background: $cyan !important;
+  }
+
+
+}

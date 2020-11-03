@@ -1,0 +1,39 @@
+// datatables
+.MUIDataTableHeadCell-sortLabelRoot-333 {
+  height: initial !important;
+  .MuiSvgIcon-root {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 959.95px) {
+
+  .MuiTableCell-root {
+    width: 50% !important;
+    height: initial !important;
+  }
+
+  .MUIDataTable-responsiveStacked-274 {
+    top: 50px !important;
+  }
+}
+
+.MuiListItem-button {
+  &.active {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+// header table with btn
+.header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    justify-content: left;
+  }
+  button {
+    margin-left: 0.5rem;
+    color: $green;
+  }
+}

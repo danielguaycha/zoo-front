@@ -1,0 +1,29 @@
+.MuiGrid-item {
+  &.center {
+    text-align: center;
+  }
+}
+
+.MuiToolbar-root {
+  .right-menu {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+.MuiToolbar-regular {
+ // height: 56px !important;
+}
+
+@media (min-width: 600px) {
+  .MuiToolbar-regular {
+    min-height: 56px !important;
+  }
+}
+
+// para modificar el avatar
+.avatar-toolbar {
+  height: 30px !important;
+  width: 30px !important;
+  background-color: $secondary !important;
+}

@@ -1,0 +1,142 @@
+// colores de fondo
+.bg-green {
+  background: $green !important;
+  color: white !important;
+}
+
+.bg-info {
+  background: $cyan !important;
+  color: white !important;
+}
+.bg-red {
+  background: $red !important;
+  color: white !important;
+}
+.color-red {
+  color: $red !important;
+}
+
+.color-green {
+  color: $green !important;
+}
+
+.color-info {
+  color: $cyan !important;
+}
+
+
+
+// Buttons
+
+.MuiIconButton-root {
+  &.primary {
+    color: $primary !important;
+  }
+  &.secondary {
+    color: $secondary !important;
+  }
+  &.red {
+    color: $red !important;
+  }
+  &.green {
+    color: $green !important;
+  }
+  &.blue {
+    color: $blue !important;
+  }
+  &.purple {
+    color: $purple !important;
+  }
+}
+
+//flex
+.d-flex {
+  display: flex !important;
+  &.center {
+    align-items: center;
+  }
+}
+
+// titulo en la Grid
+.grid-title {
+  max-width: 100%;
+  min-width: 100%;
+  padding-left: 10px;
+  margin-bottom: -12px;
+  margin-top: 10px;
+  p {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: $gray-600
+  }
+}
+
+.title-muted {
+  font-weight: 600;
+  color: rgba($primary, .6);
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+
+@for $i from 0 through 5 {
+  .mt-#{$i} {
+    margin-top: #{$i}rem !important;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}rem !important;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}rem !important;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}rem !important;
+  }
+  mx-#{$i} {
+    margin-left: 0 #{$i}rem !important;
+    margin-right: 0 #{$i}rem !important;
+  }
+  my-#{$i} {
+    margin-top: #{$i}rem !important;
+    margin-bottom: #{$i}rem !important;
+  }
+
+  // padding
+  .p-#{$i} {
+    padding: #{$i}rem !important;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i}rem !important;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i}rem !important;
+  }
+  px-#{$i} {
+    padding-left: 0 #{$i}rem !important;
+    padding-right: 0 #{$i}rem !important;
+  }
+  py-#{$i} {
+    padding-top: #{$i}rem !important;
+    padding-bottom: #{$i}rem !important;
+  }
+}
+
+
+.text-muted {
+  color: $gray-500 !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-upper {
+  text-transform: uppercase !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
